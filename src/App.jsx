@@ -11,6 +11,7 @@ import CompanyPrep from "./pages/CompanyPrep/CompanyPrep";
 import Tracker from "./pages/Tracker/Tracker";
 import Settings from "./pages/Settings/Settings";
 
+
 function App() {
   return (
     <BrowserRouter>
@@ -25,6 +26,9 @@ function App() {
         <Route path="/company-prep" element={<CompanyPrep />} />
         <Route path="/tracker" element={<Tracker />} />
         <Route path="/settings" element={<Settings />} />
+        <Route path="/resume-ai" element={<ResumeAI />} />
+<Route path="/interview-ai" element={<InterviewAI />} />
+<Route path="/tracker" element={<Tracker />} />
       </Routes>
     </BrowserRouter>
   );

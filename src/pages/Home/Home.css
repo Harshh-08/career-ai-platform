@@ -24,11 +24,16 @@
 }
 
 .btn {
-  padding: 12px 25px;
+  padding: 14px 28px;
   border: none;
   border-radius: 8px;
   cursor: pointer;
   font-size: 16px;
+  transition: 0.3s;
+
+}
+.btn:hover {
+  transform: translateY(-3px);
 }
 
 .btn-primary {
@@ -75,4 +80,33 @@
 
 .card p {
   color: #555;
+}
+.why-us {
+  padding: 80px 50px;
+  background: #f8fafc;
+  text-align: center;
+}
+
+.why-us h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.why-container {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.why-card {
+  width: 300px;
+  padding: 25px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.why-card h3 {
+  margin-bottom: 15px;
 }

@@ -1,0 +1,209 @@
+/* ===========================
+   Dashboard Container
+=========================== */
+
+.dashboard {
+    width: 100%;
+    min-height: 100vh;
+    padding: 40px 60px;
+    background: #f5f7fb;
+}
+
+/* ===========================
+   Header
+=========================== */
+
+.dashboard-header {
+    margin-bottom: 40px;
+}
+
+.dashboard-header h1 {
+    font-size: 42px;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 10px;
+}
+
+.dashboard-header p {
+    font-size: 18px;
+    color: #64748b;
+}
+
+/* ===========================
+   Statistic Cards
+=========================== */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin-bottom: 35px;
+}
+
+.card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 14px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #334155;
+    margin-bottom: 20px;
+}
+
+.card h2 {
+    font-size: 42px;
+    color: #2563eb;
+    font-weight: bold;
+}
+
+/* ===========================
+   Common Section Style
+=========================== */
+
+.progress-card,
+.activity,
+.quick-actions {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    margin-bottom: 35px;
+}
+
+.progress-card h2,
+.activity h2,
+.quick-actions h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 25px;
+}
+
+/* ===========================
+   Chart
+=========================== */
+
+.progress-card canvas {
+    width: 100% !important;
+    height: 400px !important;
+}
+
+/* ===========================
+   Activity
+=========================== */
+
+.activity ul {
+    list-style: none;
+    padding: 0;
+}
+
+.activity li {
+    padding: 15px 0;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 17px;
+    color: #475569;
+}
+
+.activity li:last-child {
+    border-bottom: none;
+}
+
+/* ===========================
+   Quick Actions
+=========================== */
+
+.action-buttons {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.action-buttons button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 28px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.action-buttons button:hover {
+    background: #1d4ed8;
+    transform: translateY(-3px);
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media (max-width: 1200px) {
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .dashboard {
+        padding: 25px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard-header h1 {
+        font-size: 32px;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+    }
+
+    .action-buttons button {
+        width: 100%;
+    }
+
+}
+.activity ul{
+    list-style:none;
+    padding:0;
+}
+
+.activity-item{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    padding:15px 0;
+    border-bottom:1px solid #e2e8f0;
+}
+
+.activity-item:last-child{
+    border-bottom:none;
+}
+
+.activity-date{
+    min-width:70px;
+    font-weight:700;
+    color:#2563eb;
+}
+
+.activity-text{
+    color:#475569;
+    font-size:16px;
+}
