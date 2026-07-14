@@ -1,0 +1,108 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+}
+
+.loading-page{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#f4f7fc;
+    padding:20px;
+}
+
+.loading-card{
+    width:100%;
+    max-width:500px;
+    background:#fff;
+    padding:40px;
+    border-radius:18px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.loading-icon{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.loading-card h1{
+    color:#2563eb;
+    margin-bottom:15px;
+    font-size:32px;
+}
+
+.loading-card p{
+    color:#6b7280;
+    line-height:1.7;
+    margin-bottom:30px;
+}
+
+/* Progress Bar */
+
+.progress-bar{
+    width:100%;
+    height:12px;
+    background:#e5e7eb;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.progress-fill{
+    height:100%;
+    background:linear-gradient(90deg,#2563eb,#1d4ed8);
+    transition:width .3s ease;
+}
+
+.loading-card h2{
+    margin:20px 0;
+    color:#2563eb;
+    font-size:28px;
+}
+
+/* Steps */
+
+.loading-steps{
+    margin-top:25px;
+    text-align:left;
+}
+
+.loading-steps div{
+    padding:10px 15px;
+    margin-bottom:10px;
+    border-radius:8px;
+    background:#f3f4f6;
+    color:#6b7280;
+    transition:.3s;
+}
+
+.loading-steps .active{
+    background:#dbeafe;
+    color:#2563eb;
+    font-weight:600;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .loading-card{
+        padding:25px;
+    }
+
+    .loading-card h1{
+        font-size:26px;
+    }
+
+    .loading-card p{
+        font-size:15px;
+    }
+
+    .loading-icon{
+        font-size:50px;
+    }
+
+}

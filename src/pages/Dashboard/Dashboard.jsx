@@ -7,6 +7,7 @@ import dashboardData from "../../data/dashboardData";
 import ProgressChart from "../../components/charts/ProgressChart";
 import "./Dashboard.css";
 
+
 function Dashboard() {
   const navigate = useNavigate();
   return (
@@ -40,22 +41,33 @@ function Dashboard() {
 </div>
         <ActivityList activities={dashboardData.activities}/>
 
-        <div className="action-buttons">
+        <div className="quick-actions">
 
-    <button onClick={() => navigate("/resume-ai")}>
-        Resume AI
-    </button>
+    <div className="action-card">
+        <h3>Resume AI</h3>
+        <p>Upload your resume and get ATS analysis with AI suggestions.</p>
+        <button onClick={() => navigate("/resume-ai")}>
+            Open Resume AI
+        </button>
+    </div>
 
-    <button onClick={() => navigate("/interview-ai")}>
-        Interview AI
-    </button>
+    <div className="action-card">
+        <h3>Interview AI</h3>
+        <p>Practice mock interviews and receive instant AI feedback.</p>
+        <button onClick={() => navigate("/interview-ai")}>
+            Start Interview
+        </button>
+    </div>
 
-    <button onClick={() => navigate("/tracker")}>
-        Application Tracker
-    </button>
+    <div className="action-card">
+        <h3>Placement Tracker</h3>
+        <p>Track applications, interviews and placement progress.</p>
+        <button onClick={() => navigate("/tracker")}>
+            View Tracker
+        </button>
+    </div>
 
 </div>
-
       </div>
 
       <Footer />

@@ -1,79 +1,151 @@
-.resume-page{
-    padding:40px 60px;
-    background:#f5f7fb;
-    min-height:100vh;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
 }
 
-.resume-page h1{
-    font-size:40px;
-    color:#1e293b;
+body{
+    background:#f4f7fc;
+}
+
+.resume-page{
+    min-height:100vh;
+    background:#f4f7fc;
+}
+
+/* Hero */
+
+.hero{
+    background:linear-gradient(135deg,#2563eb,#1e40af);
+    color:#fff;
+    text-align:center;
+    padding:70px 20px;
+}
+
+.hero h1{
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    max-width:700px;
+    margin:auto;
+    line-height:1.7;
+}
+
+/* Upload */
+
+.upload-section{
+    display:flex;
+    justify-content:center;
+    padding:50px 20px;
+}
+
+.upload-card{
+    width:100%;
+    max-width:700px;
+    background:#fff;
+    padding:30px;
+    border-radius:16px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.upload-card h2{
+    margin-bottom:20px;
+    color:#1f2937;
+}
+
+.upload-card input,
+.upload-card textarea{
+    width:100%;
+    padding:12px;
+    margin:12px 0;
+    border:1px solid #d1d5db;
+    border-radius:10px;
+    font-size:15px;
+}
+
+.upload-card textarea{
+    resize:none;
+}
+
+.file-name{
+    color:#2563eb;
+    font-weight:600;
     margin-bottom:10px;
 }
 
-.subtitle{
-    color:#64748b;
-    margin-bottom:35px;
-}
-
-.resume-container{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:25px;
-    margin-bottom:30px;
-}
-
-.resume-card{
-    background:#fff;
-    padding:30px;
-    border-radius:12px;
-    box-shadow:0 5px 15px rgba(0,0,0,.08);
-}
-
-.resume-card h2{
-    margin-bottom:20px;
-    color:#1e293b;
-}
-
-.resume-card input{
-    margin:20px 0;
-}
-
-.resume-card button{
+.upload-card button{
+    width:100%;
+    padding:14px;
     background:#2563eb;
-    color:white;
+    color:#fff;
     border:none;
-    padding:12px 24px;
-    border-radius:8px;
+    border-radius:10px;
     cursor:pointer;
+    font-size:16px;
+    transition:.3s;
 }
 
-.resume-card button:hover{
+.upload-card button:hover{
     background:#1d4ed8;
 }
 
-.score{
-    font-size:60px;
-    font-weight:bold;
+/* Features */
+
+.features-section{
+    padding:20px 8% 60px;
+}
+
+.features-section h2{
+    text-align:center;
+    margin-bottom:35px;
+    color:#1f2937;
+}
+
+.features-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.feature-card{
+    background:#fff;
+    padding:25px;
+    border-radius:14px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.feature-card:hover{
+    transform:translateY(-5px);
+}
+
+.feature-card h3{
     color:#2563eb;
-    margin:20px 0;
+    margin-bottom:10px;
 }
 
-.resume-card ul{
-    padding-left:20px;
+.feature-card p{
+    color:#6b7280;
+    line-height:1.6;
 }
 
-.resume-card li{
-    margin-bottom:12px;
-}
+/* Responsive */
 
 @media(max-width:768px){
 
-.resume-page{
-    padding:20px;
-}
+    .hero h1{
+        font-size:32px;
+    }
 
-.resume-container{
-    grid-template-columns:1fr;
-}
+    .upload-card{
+        padding:20px;
+    }
 
+    .features-grid{
+        grid-template-columns:1fr;
+    }
 }

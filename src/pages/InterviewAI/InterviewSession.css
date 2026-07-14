@@ -1,0 +1,126 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+}
+
+body{
+    background:#f4f7fc;
+}
+
+.session-page{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px 20px;
+    background:#f4f7fc;
+}
+
+.session-card{
+    width:100%;
+    max-width:850px;
+    background:#fff;
+    padding:35px;
+    border-radius:16px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.session-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.session-header h2{
+    color:#2563eb;
+}
+
+.session-header span{
+    background:#dbeafe;
+    color:#2563eb;
+    padding:8px 14px;
+    border-radius:8px;
+    font-weight:600;
+}
+
+.progress{
+    margin-bottom:20px;
+    color:#6b7280;
+    font-weight:500;
+}
+
+.question-box{
+    background:#f8fafc;
+    border-left:5px solid #2563eb;
+    padding:20px;
+    border-radius:10px;
+    margin-bottom:20px;
+}
+
+.question-box h3{
+    color:#1f2937;
+    line-height:1.6;
+}
+
+textarea{
+    width:100%;
+    padding:15px;
+    border:1px solid #d1d5db;
+    border-radius:10px;
+    resize:none;
+    font-size:15px;
+    outline:none;
+    margin-bottom:25px;
+}
+
+textarea:focus{
+    border-color:#2563eb;
+}
+
+.button-group{
+    display:flex;
+    justify-content:space-between;
+    gap:15px;
+}
+
+.button-group button{
+    flex:1;
+    padding:14px;
+    border:none;
+    border-radius:10px;
+    background:#2563eb;
+    color:#fff;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.button-group button:hover:not(:disabled){
+    background:#1d4ed8;
+}
+
+.button-group button:disabled{
+    background:#cbd5e1;
+    cursor:not-allowed;
+}
+
+@media(max-width:768px){
+
+    .session-card{
+        padding:25px;
+    }
+
+    .session-header{
+        flex-direction:column;
+        gap:10px;
+        align-items:flex-start;
+    }
+
+    .button-group{
+        flex-direction:column;
+    }
+
+}

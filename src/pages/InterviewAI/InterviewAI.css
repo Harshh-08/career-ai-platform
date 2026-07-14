@@ -1,0 +1,123 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+}
+
+body{
+    background:#f4f7fc;
+}
+
+.interview-page{
+    min-height:100vh;
+    background:#f4f7fc;
+}
+
+/* Hero */
+
+.hero{
+    background:linear-gradient(135deg,#2563eb,#1e40af);
+    color:#fff;
+    text-align:center;
+    padding:70px 20px;
+}
+
+.hero h1{
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    max-width:700px;
+    margin:0 auto 25px;
+    line-height:1.7;
+}
+
+.hero button{
+    padding:14px 28px;
+    border:none;
+    border-radius:10px;
+    background:#fff;
+    color:#2563eb;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.hero button:hover{
+    transform:translateY(-2px);
+}
+
+/* Sections */
+
+.features,
+.companies{
+    padding:60px 8%;
+}
+
+.features h2,
+.companies h2{
+    text-align:center;
+    margin-bottom:35px;
+    color:#1f2937;
+}
+
+/* Feature Cards */
+
+.feature-grid,
+.company-grid{
+    display:grid;
+    gap:20px;
+}
+
+.feature-grid{
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+}
+
+.company-grid{
+    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+}
+
+.feature-card,
+.company-card{
+    background:#fff;
+    padding:25px;
+    border-radius:14px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.feature-card:hover,
+.company-card:hover{
+    transform:translateY(-5px);
+}
+
+.feature-card h3,
+.company-card{
+    color:#2563eb;
+    font-weight:600;
+}
+
+.feature-card p{
+    margin-top:10px;
+    color:#6b7280;
+    line-height:1.6;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .hero h1{
+        font-size:32px;
+    }
+
+    .features,
+    .companies{
+        padding:40px 20px;
+    }
+
+}

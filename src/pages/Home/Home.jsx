@@ -8,7 +8,7 @@ function Home() {
       <Navbar />
 
       <section className="hero">
-        <h1>Career AI</h1>
+        <h1>Combo Career AI</h1>
 
         <p>
           Build ATS-friendly resumes, practice AI-powered interviews,
